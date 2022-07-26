@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+*{
+    padding: 0.025rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: blue;
+    font-size: 25px;
+    background-color:rgb(251, 197, 197) ;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.completed{
+    text-decoration: line-through;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p{
+    color: rgb(0, 100, 84);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+    color: rgb(21, 46, 42);
+    font-family:'Sora', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.task{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-task-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-input{
+    font-family:'Sora', sans-serif;
+
+    border-radius: 10px;
+    border: none;
+    width: 70%;
+    padding: 10px 0 10px 0;
+    margin: 0.5rem 0 0.5rem 0;
+    text-align: center;
+}
+
+    .add-task-button, .btn1 {
+        font-family:'Sora', sans-serif;
+        margin: 0.025rem;
+        box-shadow:inset -1px 40px 0px -24px #e67a73;
+        background-color:#e4685d;
+        border-radius: 90%;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:20px;
+        padding:6px 15px;
+        text-decoration:none;
+        text-shadow:2px 0px 16px #b23e35;
+        transition: all 1000ms;
+    }
+    .add-task-button:hover, .btn1:hover {
+        background-color:#eb675e;
+    }
+    .add-task-button:active , .btn1:hover{
+        position:relative;
+        top:1px;
+    }
