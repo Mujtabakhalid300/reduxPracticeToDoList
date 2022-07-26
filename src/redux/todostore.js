@@ -29,10 +29,14 @@ export const counterSlice = createSlice({
     deleteone: (state, action) => {
       return state.filter((e) => e.statement !== action.payload.statement);
     },
+    clearlist: (state) => {
+      return [];
+    },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { deleteone, taskcompleted, addnewtask } = counterSlice.actions;
+export const { deleteone, taskcompleted, addnewtask, clearlist } =
+  counterSlice.actions;
 
 export default counterSlice.reducer;
