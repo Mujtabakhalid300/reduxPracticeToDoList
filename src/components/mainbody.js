@@ -30,14 +30,7 @@ const Mainbody = () => {
             }
           }}
         >
-          <CgEnter
-            onClick={() => {
-              if (newtodo !== "") {
-                dispatch(addnewtask({ statement: newtodo, status: false }));
-                setnewtodo("");
-              }
-            }}
-          />
+          <CgEnter />
         </button>
       </div>
       <div>

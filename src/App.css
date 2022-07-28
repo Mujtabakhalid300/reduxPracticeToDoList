@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
 *{
-    padding: 0.025rem;
+    line-height: 1.25;
 }
 
 body{
@@ -16,9 +16,10 @@ body{
 }
 
 p{
-    color: rgb(0, 100, 84);
+    color: white;
     font-family: 'Manrope', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
+    
 }
 
 h1{
@@ -37,7 +38,13 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgb(37, 70, 48);
+    width: 80vw;
+    margin: 0.5rem 0 0.5rem 0;
+    border-radius: 50px;
 }
+
+
 
 .add-task-div{
     display: flex;
@@ -59,22 +66,26 @@ h1{
 
     .add-task-button, .btn1 {
         font-family:'Sora', sans-serif;
-        margin: 0.025rem;
-        box-shadow:inset -1px 40px 0px -24px #e67a73;
-        background-color:#e4685d;
+        margin: 0.0025rem;
+        /* box-shadow:inset -1px 40px 0px -24px #e67a73; */
+        /* background-color:#e4685d; */
+        background-color: rgb(148, 180, 159);
         border-radius: 90%;
+        border: 0px;
         display:inline-block;
         cursor:pointer;
-        color:#ffffff;
-        font-family:Arial;
+        /* color:#ffffff; */
+        /* font-family:Arial; */
         font-size:20px;
         padding:6px 15px;
         text-decoration:none;
-        text-shadow:2px 0px 16px #b23e35;
-        transition: all 1000ms;
+        /* text-shadow:2px 0px 16px #b23e35; */
+        transition: all 100ms;
+        text-align: center;
     }
     .add-task-button:hover, .btn1:hover {
-        background-color:#eb675e;
+        background-color:rgb(21, 46, 42);
+        color: white;
     }
     .add-task-button:active , .btn1:hover{
         position:relative;

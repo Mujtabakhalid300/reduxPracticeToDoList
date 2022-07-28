@@ -14,7 +14,7 @@ const Navbar = () => {
           <TbSum />
           <div>{state.length}</div>
           <MdPending />
-          <div>{state.filter((e) => e.status == true).length}</div>
+          <div>{state.filter((e) => e.status === true).length}</div>
         </div>
         <button
           onClick={() => {
